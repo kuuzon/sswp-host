@@ -31,7 +31,7 @@ try {
       universe_domain: config.db.universe_domain,
     };
   }
-  dbStartup(serviceAccountKey);
+  debugError500(serviceAccountKey);
   
   // OPTIONS VAR: Grant admin access to firebase services + bucket services
   const firebaseAppOptions = {
